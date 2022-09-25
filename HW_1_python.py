@@ -14,6 +14,7 @@ if n > 5:
 	print('This day is weekend =) Hheeee!')
 
 #Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+# Эта задача не совсем правильно решена, в коспекте урок 2 есть верное решение!!!
 
 x = int(input('Input X: '))
 y = int(input('Input Y: '))
@@ -25,7 +26,7 @@ right = not x and not y and not z
 if left == right:
 	print('Statement is true.')
 
-if left !== right:
+if left != right:
 	print('Statement is false.')
 
 #Напишите программу, которая принимает на вход координаты точки (X и Y), 
@@ -74,5 +75,6 @@ y2 = float(input('Input second Y coordinates: '))
 xLine = x2 - x1
 yLine = y2 - y1
 distanse = xLine * xLine + yLine * yLine
-distanceQuarde = sqrt(distanse)
+import math
+distanceQuarde = math.sqrt(distanse)
 print(distanceQuarde)
